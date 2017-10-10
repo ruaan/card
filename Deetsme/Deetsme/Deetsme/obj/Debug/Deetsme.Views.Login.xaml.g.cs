@@ -11,7 +11,7 @@
 namespace Deetsme.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\GitProjects\\Deetsme\\Deetsme\\Deetsme\\Views\\Login.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\GitProjects\\card\\Deetsme\\Deetsme\\Deetsme\\Views\\Login.xaml")]
     public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

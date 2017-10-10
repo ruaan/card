@@ -13,14 +13,14 @@
                 <Image HorizontalOptions="Center" x:Name="DeetsImage" Margin="20"></Image>
             </StackLayout>
             <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="10" BackgroundColor="LightGray">
-                <controls:CircleImage x:Name="CircleImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwi4Fsj6XdeakXZlcfkikM9VsrXRRscIFq9N0Fcr85eNamD4dLA"></controls:CircleImage>
+                <controls:CircleImage x:Name="CircleImage" Aspect="AspectFill" HorizontalOptions="Center" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwi4Fsj6XdeakXZlcfkikM9VsrXRRscIFq9N0Fcr85eNamD4dLA"></controls:CircleImage>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Label Text="Name" FontSize="Large" HorizontalOptions="Center"></Label>
                     <Label Text="Surname" FontSize="Large" HorizontalOptions="Center"></Label>
                 </StackLayout>
                 <Label Text="CMO" FontSize="Medium" HorizontalOptions="CenterAndExpand"></Label>
             </StackLayout>
-            <ListView HeightRequest="250" RowHeight="50" HorizontalOptions="FillAndExpand" x:Name="ListView" ItemSelected="ListView_ItemSelected">
+            <ListView HeightRequest="250" RowHeight="50" HorizontalOptions="FillAndExpand" x:Name="ListView" ItemSelected="ListView_ItemSelected" SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -6,9 +6,9 @@
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
             <StackLayout VerticalOptions="Start">
-                <Image Margin="0,20,0,0" x:Name="logoimage" Aspect="AspectFill" HeightRequest="150" WidthRequest="150"></Image>
+                <Image Margin="20" HorizontalOptions="Center" x:Name="logoimage" Aspect="AspectFit"></Image>
             </StackLayout>
             <Label Text="Deetsme Login" HorizontalOptions="Center"></Label>
             <StackLayout VerticalOptions="Center">
