@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Deetsme"
+             x:Class="Deetsme.MainPage"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             BackgroundColor="White"
+             Title="Main Page">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                <Image HorizontalOptions="Center" x:Name="DeetsImage" Margin="20"></Image>
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="10" BackgroundColor="LightGray">
+                <controls:CircleImage x:Name="CircleImage" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwi4Fsj6XdeakXZlcfkikM9VsrXRRscIFq9N0Fcr85eNamD4dLA"></controls:CircleImage>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Name" FontSize="Large" HorizontalOptions="Center"></Label>
+                    <Label Text="Surname" FontSize="Large" HorizontalOptions="Center"></Label>
+                </StackLayout>
+                <Label Text="CMO" FontSize="Medium" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <ListView HeightRequest="250" RowHeight="50" HorizontalOptions="FillAndExpand" x:Name="ListView" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="0,0,0,2">
+                                <StackLayout WidthRequest="50" HeightRequest="50" BackgroundColor="#bfc0c2" Padding="10" HorizontalOptions="Start">
+                                    <Image Source="{Binding Image}" Aspect="AspectFit" HeightRequest="30" WidthRequest="30" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+                                </StackLayout>
+                                <StackLayout HeightRequest="50" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#0082C9">
+                                    <Label Text="{Binding Text}" HorizontalOptions="StartAndExpand" Margin="10"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label HorizontalOptions="CenterAndExpand" TextColor="#0082C9" Text="Share Your deets" FontSize="Large" Margin="5"></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image HorizontalOptions="Center" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Margin="10" x:Name="sms"></Image>
+                <Image HorizontalOptions="Center" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Margin="10" x:Name="whatsapp"></Image>
+                <Image HorizontalOptions="Center" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" Margin="10" x:Name="email"></Image>
+            </StackLayout>
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>

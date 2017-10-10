@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Deetsme.Views.Login"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Image Margin="0,20,0,0" x:Name="logoimage" Aspect="AspectFill" HeightRequest="150" WidthRequest="150"></Image>
+            </StackLayout>
+            <Label Text="Deetsme Login" HorizontalOptions="Center"></Label>
+            <StackLayout VerticalOptions="Center">
+                <Entry Placeholder="username" Margin="10" HorizontalOptions="FillAndExpand"></Entry>
+                <Entry Placeholder="password" Margin="10" HorizontalOptions="FillAndExpand"></Entry>
+
+                <Button Margin="30,10,30,10" HorizontalOptions="FillAndExpand" Text="Login" Clicked="Button_Clicked" BackgroundColor="#0082C9" TextColor="White"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
